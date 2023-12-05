@@ -39,6 +39,11 @@ class ModelBuku extends CI_Model
         return $this->db->get()->row($field);
     }
     
+    public function tampil()
+    {
+        return $this->db->tampil('buku');
+    }
+    
     //manajemen kategori
     public function getKategori()
     {
